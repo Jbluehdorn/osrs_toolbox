@@ -4,14 +4,19 @@
   "description": "Various Tools for OSRS",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": "https://github.com/Jbluehdorn/osrs_toolbox",
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "Jordan Bluehdorn",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^2.0.0"
+    "bootstrap": "^4.1.1",
+    "electron": "^2.0.0",
+    "laravel-mix": "^2.1.11"
   }
 }
