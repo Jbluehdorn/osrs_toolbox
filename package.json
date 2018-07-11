@@ -17,6 +17,8 @@
   "devDependencies": {
     "bootstrap": "^4.1.1",
     "electron": "^2.0.0",
-    "laravel-mix": "^2.1.11"
+    "laravel-mix": "^2.1.11",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
   }
 }
