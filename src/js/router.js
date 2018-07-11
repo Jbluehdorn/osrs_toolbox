@@ -6,5 +6,8 @@ export default new VueRouter({
     routes: [{
         path: '/',
         component: require('./components/Home')
+    }, {
+        path: '/SlayerPoints',
+        component: require('./components/SlayerPoints')
     }]
 })
